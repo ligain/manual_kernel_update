@@ -23,6 +23,11 @@ history -c
 
 rm -rf /run/log/journal/*
 
+# Clear kernel source files 
+rm -f /usr/src/linux-5.3.8.tar.xz
+rm -rf /usr/src/linux-5.3.8
+
+
 # Fill zeros all empty space
 dd if=/dev/zero of=/EMPTY bs=1M
 rm -f /EMPTY
